@@ -1,28 +1,66 @@
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #2f2f37;
-  max-width: 960px;
-  padding: 16px;
+.slider__img {
+  display: block;
+  width: 85px;
+  height: 85px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #ff6b0a;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
+.slider__item {
+  text-align: center;
+}
+.slider__box {
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1034px;
+  background: #FAFAFA;
+  padding: 40px 110px 40px 110px;
+  text-align: center;
 }
 
-.example .background {
-  height: 240px;
-  // ❗️❗️❗️ The path to images from a SASS file
-  // is always the same as from the css folder.
-  background-image: url('../images/logo.png');
-  background-size: cover;
-  background-position: center;
+.slider__text {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slider__dots {
+margin-top: 16px;
+}
+
+.slick-track{
+  display: flex;
+}
+
+.slick-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.slick-dots li{
+  list-style: none;
+  margin-right: 18px;
+}
+
+.slick-dots li.slick-active button{
+  background-color: transparent;
+  border-radius: 0;
+  background-image: url(../images/house.svg);
+  width: 12px;
+  height: 12px;
+}
+
+.slick-dots li button{
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  border: none;
+  
+}
+.slick-dots li:last-child {
+  margin-right: 0;
 }
